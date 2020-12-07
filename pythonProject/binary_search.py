@@ -28,7 +28,3 @@ def binary_search(sorted_list, item):
 print('searched_element')
 searched_element = int(input())
 print(binary_search(my_list, searched_element))
-# low = int(input())
-# high = int(input())
-# mid = (low + high) / 2
-# print(mid)
