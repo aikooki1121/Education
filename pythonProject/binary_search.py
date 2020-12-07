@@ -1,5 +1,5 @@
 my_list = []
-print('Введите числа(через ''enter'')')
+print('Введите кол-во элементов массива и его элементы')
 for a in range(0, int(input())):
     # t = int(input())
     my_list.append(int(input()))
