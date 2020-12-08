@@ -29,6 +29,3 @@ def selectionSort(arr):
 
 print('smaller_index:', findSmaller(arr))
 print('sorted list:', selectionSort(arr))
-
-# arr = [5, 3, 6, 2, 10]5
-# print(range(1, len(arr)))
