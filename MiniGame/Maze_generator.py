@@ -148,3 +148,7 @@ class MazeGenerator(object):
 
             # print(self.maze, "\n")
         return self.maze
+#
+# class ExitPoint(object):
+#     def __init__(self):
+#         self.

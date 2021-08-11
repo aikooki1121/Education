@@ -38,18 +38,19 @@ class Maze(object):
 
     def hero_interaction(self, key):  # todo ТОЛЬКО логика взаимодейтсвия
         """Логика взаимодейтсвия героя с объектами в лабиринте"""
-        if key == pg.K_d:
-            if self.maze[self.myHero.y][self.myHero.x + 1] != 1:
-                self.myHero.move_position(dx=1, dy=0)
-        if key == pg.K_a:
-            if self.maze[self.myHero.y][self.myHero.x - 1] != 1:
-                self.myHero.move_position(dx=-1, dy=0)
-        if key == pg.K_s:
-            if self.maze[self.myHero.y + 1][self.myHero.x] != 1:
-                self.myHero.move_position(dx=0, dy=1)
-        if key == pg.K_w:
-            if self.maze[self.myHero.y - 1][self.myHero.x] != 1:
-                self.myHero.move_position(dx=0, dy=-1)
+        if self.myHero.can_move():
+            if key == pg.K_d:
+                if self.maze[self.myHero.y][self.myHero.x + 1] != 1:
+                    self.myHero.move_position(dx=1, dy=0)
+            if key == pg.K_a:
+                if self.maze[self.myHero.y][self.myHero.x - 1] != 1:
+                    self.myHero.move_position(dx=-1, dy=0)
+            if key == pg.K_s:
+                if self.maze[self.myHero.y + 1][self.myHero.x] != 1:
+                    self.myHero.move_position(dx=0, dy=1)
+            if key == pg.K_w:
+                if self.maze[self.myHero.y - 1][self.myHero.x] != 1:
+                    self.myHero.move_position(dx=0, dy=-1)
 
 
 

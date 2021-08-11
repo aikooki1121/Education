@@ -10,8 +10,8 @@ class GameScene(KeyboardInterface):
     """
 
     def __init__(self):
-        self.myMaze = Maze()
         self.eng = Engine()
+        self.myMaze = Maze()
 
     def load(self):
         x = int(input('высота:\t'))
